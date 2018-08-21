@@ -1,0 +1,13 @@
+Package: otherfdr
+Title: Other FDR Methods
+Version: 0.0.99
+Authors@R: person("Patrick", "Kimes", email = "patrick.kimes@gmail.com", role = c("aut", "cre"))
+Description: Several FDR controlling methods described in the statistical literature are not available
+    as simple R packages. Occassionally, these methods are re-implemented by other researchers for the
+    purpose of benchmarking. However, these implementations are often burried in GitHub repos (which aren't
+    necessarily R packages) or larger packages documenting analyses. This package is a simple collection
+    of these various FDR controlling methods, centralized for easier access.
+Depends: R (>= 3.5.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
