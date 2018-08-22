@@ -21,6 +21,7 @@
 #' References for the knockoff procedure for false discovery rate control (underlying theory):
 #' 
 #' Barber, R.F., Candès, E.J. (2015) Controlling the false discovery rate via knockoffs. The Annals of Statistics, 43(5):2055-2085. \url{https://doi.org/10.1214/15-AOS1337}
+#'
 #' Arias-Castro, E., Chen, S. (2017) Distribution-free multiple testing. Electronic Journal of Statistics, 11(1):1983-2001. \url{https://doi.org/10.1214/17-EJS1277}
 #'
 #' Reference for the original BC procedure function (underlying code):
@@ -46,9 +47,3 @@ bcfdr <- function(p) {
     ## determine min mask/cutoff where each hypothesis is rejected
     sapply(p, function(x) { min(c(fdphat[sorted.mask.p >= x], Inf)) })
 }
-
-
-
-
-
-
